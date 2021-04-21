@@ -81,3 +81,12 @@ input[type="text"]{
     border: none;
     font-family: 'Concert One', cursive;
 }
+
+.user-avatar {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.repo-container {
+    margin: 10px;
+}
