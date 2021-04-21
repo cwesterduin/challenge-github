@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* font-family: 'Concert One', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus, *:active {
+    outline: none;
+}
+
+html {
+    overflow: auto;
+    font-family: 'Concert One', cursive;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    --box-shadow: 0 1px 6px var(--color-text);
+    --border: solid var(--color-text);
+
+    overflow: auto;
+    padding: 1rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    margin: 5px;
+    
+}
+
+nav > a {
+    padding: 20px;
+}
+
+
+button, input[type="submit"] {
+    background: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    cursor: pointer
+}
+
+button {
+    border-radius: 15px;
+    border: var(--border);
+    padding: 1rem 1rem;
+}
+
+.search-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    border-radius: 50px;
+    border: var(--border);
+    width: 100%;
+    max-width: 350px;
+    margin-top: 1rem;
+}
+
+.search-cont:hover, .search-cont.active {
+    box-shadow: var(--box-shadow);
+}
+.search-cont > *:focus, .search-cont > *:active {
+    outline: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"][name="search"] {
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+    border-left: var(--border);
+    padding: 0 1rem
+
+}
+
+input[type="text"]{
+    background: var(--color-background);
+    border-radius: 50px 0 0 50px;
+    color: var(--color-text);
+    font-size: 16px;
+    height: 100%;
+    padding: 0 1rem;
+    border: none;
+    font-family: 'Concert One', cursive;
+    flex: 1
+}
+
+.user-avatar {
+    max-width: 130px;
+    border-radius: 50%;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.repo-container {
+    margin: 30px;
+    border: 2px solid var(--color-primary);
+    padding: 20px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.git-icons-container {
+    display: flex; 
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h3.user-name {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+svg {
+    color: var(--color-primary)
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.octoface {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    margin-left: 5px;
+}
+
+.error {
+    color: red;
+}
