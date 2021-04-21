@@ -1,13 +1,16 @@
 import React from 'react'
 
 function Item({ title }){
+    console.log(title)
     return(
-        <li>{title}</li>
+        <div className="repo-container">
+        <li>{title.name}</li>
+        </div>
     )
 }
 
 function Result({result}){
-    const resultList = result.map(item => <Item title={item.name}/>)
+    const resultList = result.map(item => <Item title={item}/>)
     return(
         <ul>{resultList}</ul>
     )
