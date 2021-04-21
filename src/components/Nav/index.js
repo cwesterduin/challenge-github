@@ -11,7 +11,7 @@ const BackButton = () => {
 
 const Nav = () => {
     return (
-        <nav className="navbar">
+        <nav className="navbar" role="navigation">
             <NavLink exact to="/" activeClassName="current">home</NavLink>
             <NavLink to="/info" activeClassName="current">info</NavLink>
             <BackButton />
