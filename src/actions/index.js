@@ -1,3 +1,9 @@
+var options = {
+    headers: {
+                "Authorization": "token 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"
+             }
+             };
+
 export const setMode = mode => ({ type: 'SET_MODE', payload: mode})
 export const toggleMode = () => ({ type: 'TOGGLE_MODE'})
 
@@ -10,7 +16,7 @@ const loadResult = (results) => ({
 
 const getRepositories = async username => {
     try {
-        const res = await fetch(`https://api.github.com/users/${username}/repos`)
+        const res = await fetch(`https://api.github.com/users/${username}/repos`, options)
         if (res.status === 404) { throw Error }
         const data = await res.json()
         return data
