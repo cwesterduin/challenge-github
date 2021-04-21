@@ -4,7 +4,7 @@ import { Avatar } from '../../components'
 
 function Collabs({data}){
     return (
-        data.map(item => <span><h3>{item.login}</h3><Avatar url={item.avatar_url}/></span>)
+        data.map(item => <span><h3 className="user-name">{item.login}</h3><Avatar url={item.avatar_url}/></span>)
     )
 }
 
@@ -35,7 +35,7 @@ function Info(){
 
     return (
         repo ? 
-            <div>
+            <div className="info-container">
                 <h2>{repo.name}</h2>
                 <small>by:</small>
                 <div style={{display:'flex', flexFlow: 'row wrap'}}>
@@ -43,7 +43,7 @@ function Info(){
                 </div>
             </div> 
             : 
-            <div>404 repo not found</div>
+            <div className="info-container error">404 repo not found</div>
     )
 }
 

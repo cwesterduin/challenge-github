@@ -104,9 +104,20 @@ input[type="text"]{
 }
 
 .repo-container {
-    margin: 20px;
+    margin: 30px;
     border: 2px solid var(--color-primary);
     padding: 20px;
+    border-radius: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3.user-name {
+    text-align: center;
 }
 
 p {
@@ -121,4 +132,8 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.error {
+    color: red;
 }

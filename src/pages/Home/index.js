@@ -16,7 +16,7 @@ function Home(){
     
     const search = searchTerm => dispatch(getResult(searchTerm));
 
-    const renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
+    const renderResult = () => loading ? <p className="info-container">Loading . . .</p> : <Result result={result}/>
 return (
         <>
         <div id="search">
@@ -26,7 +26,7 @@ return (
             <h1>{username && `Stalking: ${username}`}</h1>
             {result.length > 0 ? <Avatar url={result[0].owner.avatar_url} /> : null }
         </div>
-            { error ? <p role="alert">Oops there's been an error! {error}</p> : renderResult() }   
+            { error ? <p className="info-container error" role="alert">Oops there's been an error! {error}</p> : renderResult() }   
             
         </div>
         </>
