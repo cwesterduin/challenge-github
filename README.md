@@ -14,6 +14,11 @@ A minimalist react website to track a Github user's repos.
 
 Clone this repo and navigate to the root directory of this repo.
 
+Get authentication from Github:   
+- Visit https://github.com/settings/tokens  
+- Generate New Token   
+- Paste your new token into `src/actions/index.js`  
+
 To start up our react app:  
 `npm install`  
 `npm run dev`    
