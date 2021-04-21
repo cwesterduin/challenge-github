@@ -28,6 +28,19 @@ body {
     padding: 1rem;
 }
 
+.navbar {
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    margin: 5px;
+    
+}
+
+nav > a {
+    padding: 20px;
+}
+
+
 button, input[type="submit"] {
     background: var(--color-primary);
     color: var(--color-background);

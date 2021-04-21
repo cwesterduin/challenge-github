@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { SearchForm, Result, Toggle, Avatar } from './components';
+import { SearchForm, Result, Toggle, Avatar, Nav } from './components';
 import { getResult } from './actions';
 import {Helmet} from "react-helmet";
 import './style.css'
@@ -20,6 +20,7 @@ function Search(){
     const renderResult = () => loading ? <p>Loading . . .</p> : <Result result={result}/>
 return (
         <>
+        <Nav />
         <Toggle/>
         <p>toggle? {JSON.stringify(mode)}</p>
         <div id="search">
