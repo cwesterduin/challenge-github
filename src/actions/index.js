@@ -1,6 +1,6 @@
 var options = {
     headers: {
-                "Authorization": "token // paste your token here // "
+                "Authorization": "token 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"
              }
              };
 
