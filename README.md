@@ -37,8 +37,7 @@ To see our test suite:
 # Technologies
 - react, redux/react-redux, react-router-dom, react-helmet, react-icons
 
-### Dependencies:![Github API](https://user-images.githubusercontent.com/58271566/115593634-a6c6b300-a2cc-11eb-967f-2277e2deab01.gif)
-
+### Dependencies:
 
 # Process
 1. Create repo based on react redux template created previously
