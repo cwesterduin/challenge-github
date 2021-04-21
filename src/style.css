@@ -102,12 +102,16 @@ input[type="text"]{
 
 .repo-container {
     margin: 20px;
-    border: 2px solid red;
+    border: 2px solid var(--color-primary);
     padding: 20px;
 }
 
 p {
     font-size: 14px;
+}
+
+a {
+    color: var(--color-primary);
 }
 
 .user-info {
