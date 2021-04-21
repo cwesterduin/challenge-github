@@ -21,10 +21,13 @@ Get authentication from Github:
   `var options = {headers: {"Authorization": "token <<your token here>>"}};`
 
 To start up our react app:  
-`npm install`  
-`npm run dev`    
+`npm install`   
+`npm run dev`   
 
-It should automatically open up on your browser at 0.0.0.0:8080   
+It should automatically open up on your browser at 0.0.0.0:8080  
+
+To see our test suite:  
+`npn run test`  
 
 # Technologies
 - react, redux/react-redux, react-router-dom, react-helmet 
@@ -50,4 +53,4 @@ It should automatically open up on your browser at 0.0.0.0:8080
 ## Challenges 
 - Dark mode with no flicker - kind of works. We used react-helmet to run javascript which sets css variables before the app renders so it renders with correct color
 - Best way to make multiple requests to the github API as data is stored at many urls
-- hitting the API rate limit
+- Hitting the API rate limit and having to implement auth for fetch
