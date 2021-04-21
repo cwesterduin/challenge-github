@@ -38,7 +38,7 @@ function Info(){
             <div>
                 <h2>{repo.name}</h2>
                 <small>by:</small>
-                <div style={{display:'flex'}}>
+                <div style={{display:'flex', flexFlow: 'row wrap'}}>
                 <Collabs data={collabs}/>
                 </div>
             </div> 

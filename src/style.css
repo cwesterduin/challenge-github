@@ -56,12 +56,14 @@ button {
 
 .search-cont {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 42px;
-    width: max-content;
     border-radius: 50px;
-    border: var(--border)
+    border: var(--border);
+    width: 100%;
+    max-width: 350px;
+    margin-top: 1rem;
 }
 
 .search-cont:hover, .search-cont.active {
@@ -93,6 +95,7 @@ input[type="text"]{
     padding: 0 1rem;
     border: none;
     font-family: 'Concert One', cursive;
+    flex: 1
 }
 
 .user-avatar {
@@ -102,12 +105,16 @@ input[type="text"]{
 
 .repo-container {
     margin: 20px;
-    border: 2px solid red;
+    border: 2px solid var(--color-primary);
     padding: 20px;
 }
 
 p {
     font-size: 14px;
+}
+
+a {
+    color: var(--color-primary);
 }
 
 .user-info {
