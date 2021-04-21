@@ -7,6 +7,7 @@ function SearchForm({ getResult }) {
     const handleSubmit = e => {
         e.preventDefault();
         getResult(username)
+        setUsername("")
     }
 
     const updateInput = e => {
