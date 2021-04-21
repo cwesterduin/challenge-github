@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* font-family: 'Concert One', cursive; */
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +11,7 @@
 
 html {
     overflow: auto;
+    font-family: 'Concert One', cursive;
 }
 
 body {
@@ -54,6 +58,11 @@ button {
     outline: none;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
 input[type="submit"][name="search"] {
     height: 100%;
     border-radius: 0 50px 50px 0;
@@ -70,4 +79,5 @@ input[type="text"]{
     height: 100%;
     padding: 0 1rem;
     border: none;
+    font-family: 'Concert One', cursive;
 }
