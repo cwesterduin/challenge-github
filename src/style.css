@@ -158,6 +158,15 @@ a {
     flex-direction: column;
 }
 
+.octoface {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    margin-left: 5px;
+}
+
 .error {
     color: red;
 }

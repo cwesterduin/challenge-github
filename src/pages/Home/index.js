@@ -23,7 +23,7 @@ return (
             <SearchForm getResult={search}/>
 
         <div className="user-info">
-            {username && <h1><GoOctoface/><span>{username}</span></h1>}
+            {username && <h1 className="octoface"><GoOctoface /><span>{username}</span></h1>}
             {result.length > 0 ? <Avatar url={result[0].owner.avatar_url} /> : null }
         </div>
             { error ? <p className="info-container error" role="alert">Oops there's been an error! {error}</p> : renderResult() }   
