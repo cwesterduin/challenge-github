@@ -133,9 +133,10 @@ input[type="text"]{
     justify-content: space-evenly;
 }
 
-h2.user-name {
+h3.user-name {
     text-align: center;
     display: flex;
+    justify-content: center;
     align-items: baseline;
 }
 
