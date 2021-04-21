@@ -1,8 +1,13 @@
 # Coding Challenge: Github Api - React
 
-A minimalist react website to track a Github user's repos. 
+A minimalist react website to track any Github user's repos. 
 
-# Description & Requirements
+<img width="450" alt="Screenshot 2021-04-21 at 17 44 19" src="https://user-images.githubusercontent.com/58271566/115591203-c4464d80-a2c9-11eb-88a8-c592b4346346.png"> <img width="450" alt="Screenshot 2021-04-21 at 17 46 06" src="https://user-images.githubusercontent.com/58271566/115590969-81847580-a2c9-11eb-8d64-3d98b91da364.png">
+
+# Description & Task Requirements
+
+A search will return all of a Github user's repos with info on each repo's forks, stargazers (favourites) and number of open issues. For each repo, a link to each repo's collaborators will open up on new page.
+
 - [x] Your app should make use of React  
 - [x] Your repo tracker should have an input for users to give their GitHub username  
 - [x] After submitting their username, use the GitHub API to retrieve that user's list of repos  
@@ -30,7 +35,7 @@ To see our test suite:
 `npn run test`  
 
 # Technologies
-- react, redux/react-redux, react-router-dom, react-helmet 
+- react, redux/react-redux, react-router-dom, react-helmet, react-icons
 
 ### Dependencies:
 
@@ -39,6 +44,9 @@ To see our test suite:
 2. Set up file structure 
 3. Add components 
 4. GithubAPI fetch using axios 
+5. Add test suite
+6. Styling and alignment 
+7. Deploy to Netlify!
 
 # Bugs 
 - [x] Error handing not working for unavailable usernames
