@@ -2,7 +2,7 @@
 
 A minimalist react website to track any Github user's repos. 
 
-<img width="450" alt="Screenshot 2021-04-21 at 17 44 19" src="https://user-images.githubusercontent.com/58271566/115591203-c4464d80-a2c9-11eb-88a8-c592b4346346.png"> <img width="450" alt="Screenshot 2021-04-21 at 17 46 06" src="https://user-images.githubusercontent.com/58271566/115590969-81847580-a2c9-11eb-8d64-3d98b91da364.png">
+![Github API](https://user-images.githubusercontent.com/58271566/115594211-63207900-a2cd-11eb-9fd1-1efa2070d8d9.gif)
 
 # Description & Task Requirements
 
@@ -37,7 +37,8 @@ To see our test suite:
 # Technologies
 - react, redux/react-redux, react-router-dom, react-helmet, react-icons
 
-### Dependencies:
+### Dependencies:![Github API](https://user-images.githubusercontent.com/58271566/115593634-a6c6b300-a2cc-11eb-967f-2277e2deab01.gif)
+
 
 # Process
 1. Create repo based on react redux template created previously
