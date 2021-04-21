@@ -16,8 +16,8 @@ describe('SearchForm', () => {
     });
 
     test('it calls on getResult prop on form submission', () => {
-        let usernameInput = screen.getByLabelText('username');
-        userEvent.type(usernameInput, "natbibi")
+        let usernameInput = screen.getByPlaceholderText('search for github user...');
+        userEvent.type(usernameInput, "natbibi{enter}")
         expect(getResultMock).toHaveBeenCalledWith('natbibi');
     })
 });
