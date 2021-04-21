@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 function SearchForm({ getResult }) {
-    
-    const [ username, setUsername ] = useState("")
+
+    const [username, setUsername] = useState("")
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -10,7 +10,7 @@ function SearchForm({ getResult }) {
     }
 
     const updateInput = e => {
-        const input = e.target.value 
+        const input = e.target.value
         setUsername(input)
     }
 
@@ -24,14 +24,14 @@ function SearchForm({ getResult }) {
 
     return (
         <>
-        <form aria-label="form" onSubmit={handleSubmit}>
-            <label htmlFor="username" value="username"></label>
-            <div onClick={handleActive} onBlur={dropActive} className={classList}>
-                <input autoComplete="off" type="text" id="username" value={username} placeholder="search for github user..." onChange={updateInput}/>
-                <input type="submit" name="search"  value="🔍" />
-            </div>
-        </form>
-     </>
+            <form aria-label="search-form" onSubmit={handleSubmit}>
+                <label htmlFor="username" value="username"></label>
+                <div onClick={handleActive} onBlur={dropActive} className={classList}>
+                    <input autoComplete="off" type="text" id="username" value={username} placeholder="search for github user..." onChange={updateInput} />
+                    <input type="submit" name="search" value="🔍" />
+                </div>
+            </form>
+        </>
     );
 };
 

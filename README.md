@@ -28,7 +28,7 @@ It should automatically open up on your browser at 0.0.0.0:8080
 1. Create repo based on react redux template created previously
 2. Set up file structure 
 3. Add components 
-4. API fetch using axios
+4. GithubAPI fetch using axios 
 
 # Bugs 
 - [x] Error handing not working for unavailable usernames
@@ -38,6 +38,7 @@ It should automatically open up on your browser at 0.0.0.0:8080
 
 ## Wins 
 - Theme toggle 
+- API fetch works!
 
 ## Challenges 
 

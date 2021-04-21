@@ -11,7 +11,7 @@ const reducer = (
       localStorage.setItem("color-mode",  newState.mode ? 'light' : 'dark');
       return newState;
     case "LOADING":
-      return { ...state, user: { name: action.payload }, loading: true };
+      return { ...state, user: { name: action.payload, repos: [] }, loading: true };
     case "LOAD_RESULT":
       return {
         ...state,
