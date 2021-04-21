@@ -25,8 +25,10 @@ return (
         <div id="search">
             <SearchForm getResult={search}/>
 
+        <div className="user-info">
             <h1>{username && `Stalking: ${username}`}</h1>
             {result.length > 0 ? <Avatar url={result[0].owner.avatar_url} /> : null }
+        </div>
             { error ? <p role="alert">Oops there's been an error! {error}</p> : renderResult() }   
             
         </div>
