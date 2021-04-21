@@ -6,6 +6,8 @@ var options = {
 
 export const setMode = mode => ({ type: 'SET_MODE', payload: mode})
 export const toggleMode = () => ({ type: 'TOGGLE_MODE'})
+export const selectRepo = repo => ({ type: 'SELECT_REPO', payload: repo})
+
 
 const loading = username => ({ type: 'LOADING', payload: username });
 

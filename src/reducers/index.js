@@ -21,6 +21,8 @@ const reducer = (
       };
     case "SET_ERROR":
       return { ...state, error: action.payload, loading: false };
+    case "SELECT_REPO":
+      return {...state, repo: state.user.repos.find(item=> item.name === action.payload)}
     default:
       return state;
   }
