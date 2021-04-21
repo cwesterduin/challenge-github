@@ -6,7 +6,7 @@ A minimalist react website to track a Github user's repos.
 - [x] Your app should make use of React  
 - [x] Your repo tracker should have an input for users to give their GitHub username  
 - [x] After submitting their username, use the GitHub API to retrieve that user's list of repos  
-- [ ] When selecting a repo, a User should be shown some data about that repo eg. issue count, stargazers, forks etc.  
+- [x] When selecting a repo, a User should be shown some data about that repo eg. issue count, stargazers, forks etc.  
 
 # Installation & usage
 
@@ -18,14 +18,19 @@ Get authentication from Github:
 - Visit https://github.com/settings/tokens  
 - Generate New Token   
 - Paste your new token into `src/actions/index.js`  
+  `var options = {headers: {"Authorization": "token <<your token here>>"}};`
 
 To start up our react app:  
-`npm install`  
-`npm run dev`    
+`npm install`   
+`npm run dev`   
 
-It should automatically open up on your browser at 0.0.0.0:8080   
+It should automatically open up on your browser at 0.0.0.0:8080  
+
+To see our test suite:  
+`npn run test`  
 
 # Technologies
+- react, redux/react-redux, react-router-dom, react-helmet 
 
 ### Dependencies:
 
@@ -46,9 +51,6 @@ It should automatically open up on your browser at 0.0.0.0:8080
 - API fetch works!
 
 ## Challenges 
-
-# Code Snippet
-(insert proud code here)
-
-# Future Features
-- ??
+- Dark mode with no flicker - kind of works. We used react-helmet to run javascript which sets css variables before the app renders so it renders with correct color
+- Best way to make multiple requests to the github API as data is stored at many urls
+- Hitting the API rate limit and having to implement auth for fetch
