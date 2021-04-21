@@ -1,8 +1,9 @@
-var options = {
-    headers: {
-                "Authorization": "token // paste your token here // "
-             }
-             };
+// Add a github token in development if you don't want to hit API rate limit
+// var options = {
+//     headers: {
+//                 "Authorization": "token <<your token>>"
+//              }
+//              };
 
 export const setMode = mode => ({ type: 'SET_MODE', payload: mode})
 export const toggleMode = () => ({ type: 'TOGGLE_MODE'})
@@ -18,7 +19,7 @@ const loadResult = (results) => ({
 
 const getRepositories = async username => {
     try {
-        const res = await fetch(`https://api.github.com/users/${username}/repos`, options)
+        const res = await fetch(`https://api.github.com/users/${username}/repos`)
         if (res.status === 404) { throw Error }
         const data = await res.json()
         return data

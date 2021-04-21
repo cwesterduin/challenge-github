@@ -43,7 +43,7 @@ function Info(){
                 </div>
             </div> 
             : 
-            <div className="info-container error">404 repo not found</div>
+            <div className="info-container error">404 repo not found - try searching</div>
     )
 }
 
