@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { SearchForm, Result, Toggle } from './components';
+import { SearchForm, Result, Toggle, Avatar } from './components';
 import { getResult } from './actions';
 import {Helmet} from "react-helmet";
 import './style.css'
@@ -26,7 +26,7 @@ return (
             <SearchForm getResult={search}/>
 
             <h1>{username && `Stalking: ${username}`}</h1>
-
+            {result.length > 0 ? <Avatar url={result[0].owner.avatar_url} /> : null }
             { error ? <p role="alert">Oops there's been an error! {error}</p> : renderResult() }   
             
         </div>
