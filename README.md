@@ -51,6 +51,7 @@ To see our test suite:
 # Bugs 
 - [x] Error handing not working for unavailable usernames
 - [x] Dark mode not smooth on change - shows original color for a split second 
+- [x] activeClassName not working
 
 # Wins & Challenges 
 

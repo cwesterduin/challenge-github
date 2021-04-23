@@ -40,6 +40,11 @@ nav > a {
     padding: 20px;
 }
 
+.current {
+    color: var(--color-text);
+    font-weight: bolder;
+}
+
 
 button, input[type="submit"] {
     background: var(--color-primary);
