@@ -35,7 +35,7 @@ To see our test suite:
 `npn run test`  
 
 # Technologies
-- react, redux/react-redux, react-router-dom, react-helmet, react-icons
+react, redux/react-redux, react-router-dom, react-helmet, react-icons
 
 ### Dependencies:
 
